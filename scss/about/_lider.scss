@@ -1,0 +1,32 @@
+.lider {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #03453b;
+}
+.lider__title {
+  @include title(36px);
+  color: #ebebeb;
+  margin-bottom: 50px;
+}
+.lider__link_box {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.lider__links {
+  @include title(16px);
+  color: #ebebeb;
+  padding: 10px 25px;
+  border-radius: 4px;
+  border: 1px solid #ab8d60;
+  display: inline-block;
+}
+
+@media screen and (max-width: 540px) {
+  .lider {
+    padding-bottom: 60px;
+  }
+  .lider__title{
+    font-size: 28px;
+  }
+}

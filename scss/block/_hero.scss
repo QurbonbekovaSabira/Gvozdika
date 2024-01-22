@@ -1,0 +1,57 @@
+.hero {
+  padding-top: 190px;
+  padding-bottom: 210px;
+  background-repeat: no-repeat;
+  background-image: url(../../img/heroBg.png);
+background-size:cover;
+
+}
+.hero__title {
+  @include title(45px);
+  max-width: 639px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.hero__text {
+  @include text(20px);
+  margin-bottom: 40px;
+  max-width: 639px;
+  width: 100%;
+}
+.hero__btn {
+  @include btn;
+}
+
+@media screen and (max-width:1250px) {
+  .hero{
+    background-image: url(../../img/heroBg2.png);
+  }
+}
+
+@media screen and (max-width: 1069px) {
+ 
+  .hero__title {
+    font-size: 36px;
+  }
+  .hero__text {
+    max-width: 434px;
+  }
+
+}
+
+
+@media screen and (max-width: 640px) {
+  .hero{
+      background-image: url(../../img/heroBg3.png);
+    padding-top: 70px;
+    padding-bottom: 80px;
+  }
+  .hero__title {
+    font-size: 30px;
+    max-width: 244px;
+  }
+  .hero__text {
+    font-size: 18px;
+    max-width: 231px;
+  }
+}

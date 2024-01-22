@@ -1,0 +1,86 @@
+.section_bg {
+  background-repeat: no-repeat;
+  background-image: url(../../img/BgLight.png);
+  background-position: right top;
+}
+
+.about {
+  padding-top: 50px;
+  padding-bottom: 102px;
+  
+}
+
+.about__card {
+  padding: 20px 29px;
+  text-align: center;
+  border-radius: 4px;
+  background: #fff;
+  z-index: -1;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
+
+  &::before {
+    content: "";
+    width: 56px;
+    height: 56px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../../img/buket.svg);
+  }
+}
+.about__card_title {
+  color: #03453b;
+  @include font;
+  font-size: 18px;
+  font-weight: 400;
+}
+.about__card_box {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+z-index: -1;
+gap: 20px;
+
+}
+.about__card_last{
+    padding: 20px 29px;
+    text-align: center;
+    border-radius: 4px;
+    background: #fff;
+    z-index: -1;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
+    &::before {
+        content: "";
+        width: 56px;
+        height: 56px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/buketsecond.svg);
+      }
+}
+
+.about__card_second{
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 6;
+  grid-column-end: 7;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+@media screen and (max-width:1383px) {
+  .about__card_second{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+   }
+}
+@media screen and (max-width:667px) {
+  .section_bg{
+    background-image: none;
+  }
+  .about{
+    display: none;
+   } 
+   
+}

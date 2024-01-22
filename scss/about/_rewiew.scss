@@ -1,0 +1,42 @@
+.review {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.review__title {
+  @include title(36px);
+  color: #03453b;
+  margin-bottom: 50px;
+}
+.rewiew__card {
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+.rewiew__card_title {
+  margin-top: 20px;
+  color: #333;
+  font-size: 20px;
+  font-weight: 400;
+  @include font;
+  margin-bottom: 15px;
+}
+.rewiew__card_text {
+  color: var(--grey, #bababa);
+  font-size: 16px;
+  font-weight: 400;
+  @include font;
+  margin-bottom: 15px;
+}
+.rewiew__card_box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 80px;
+}
+
+@media screen and (max-width: 560px) {
+  .review {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

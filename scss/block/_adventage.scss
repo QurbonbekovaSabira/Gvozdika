@@ -1,0 +1,102 @@
+.advantage{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #03453B;
+    background-repeat: no-repeat;
+background-image:url(../../img/adventageLine.png) , url(../../img/adventageBg.svg) , url(../../img/adventageBg2.svg) , url(../../img/adventageBg3.svg) ;
+background-position:center top 50px , left top , right top , left bottom ;
+}
+.advantage__title{
+    @include title(36px);
+    color: #EBEBEB;
+    text-align: center;
+    margin-bottom: 31px;
+    margin-top: 50px;
+}
+
+
+// cardsto
+.advantage__card_box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px,1fr));
+    gap: 25px;
+}
+.advantage__card{
+    text-align: center;
+    &::before{
+        content: "";
+        width: 56px;
+        height: 46px;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/adventageIcon.svg);
+        margin-bottom: 10px;
+    }
+}
+.advantage__card:nth-child(3){
+    &::before{
+        content: "";
+        width: 52px;
+        height: 52px;
+        background-image: url(../../img/adventageIcon2.svg);
+      
+    }
+}
+.advantage__card:nth-child(5){
+    &::before{
+        content: "";
+        width: 52px;
+        height: 52px;
+        background-image: url(../../img/adventageIcon2.svg);
+        margin-bottom: 10px;
+    }
+}
+.advantage__card:nth-child(2){
+    &::before{
+        content: "";
+        width: 54px;
+        height: 56px;
+        background-image: url(../../img/adventageIcon3.svg);
+        margin-bottom: 10px;
+    }
+}
+.advantage__card:nth-child(4){
+    &::before{
+        content: "";
+        width: 54px;
+        height: 56px;
+        background-image: url(../../img/adventageIcon3.svg);
+        margin-bottom: 10px;
+    }
+}
+.advantage__card_title{
+    color: #EBEBEB;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 5px;
+}
+.advantage__card_text{
+    @include text;
+    color: #EBEBEB;
+}
+
+
+@media screen and (max-width:1485px) {
+    .advantage{
+        background-image:url(../../img/adventageBg.svg) , url(../../img/adventageBg2.svg) , url(../../img/adventageBg3.svg) ;
+background-position: left top , right top , left bottom ;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .advantage{
+background-image: url(../../img/adventageBGsecond.svg);
+background-position:center ;
+    }
+}
+@media screen and (max-width:670px) {
+    .advantage{
+background-image: url(../../img/adLastBg.svg);
+background-position:center ;
+    }
+}

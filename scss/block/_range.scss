@@ -1,0 +1,73 @@
+.range{
+    padding-top: 100px;
+    // padding-bottom: 50px;
+    background-repeat: no-repeat;
+background-image: url(../../img/rangeImg2.svg);
+background-position: right bottom;
+// background-size: contain;
+}
+.range__title{
+    @include title(36px);
+    margin-bottom: 50px;
+}
+.range__box{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.range__text{
+    @include text;
+}
+.range__text2{
+    @include text;
+max-width: 610px;
+width: 100%;
+}
+.range__img{
+    display: none;
+}
+
+
+@media screen and (max-width:1510px){
+   .range{
+    background-image: none;
+   }
+   .range__text2{
+    max-width: 100%;
+    margin-bottom: 20px;
+   }
+    .range__img{
+        display: block;
+        width: 100%;
+    }
+}
+// cardssss
+
+
+@media screen and (max-width:1015px) {
+    .range__box_img{
+max-width: 414px;    }
+}
+.range__box2{
+    margin-bottom: 100px;
+}
+@media screen and (max-width:903px) {
+    .range__box{
+        flex-direction: column;
+    }
+    .range__box_img{
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:616px) {
+    .range__box{
+        margin-bottom: 20px;
+    }
+    .range__title{
+        font-size: 30px;
+    }
+    .range__box2{
+        margin-bottom: 80px;
+    }
+}
